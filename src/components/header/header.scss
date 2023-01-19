@@ -1,8 +1,11 @@
+@import "src/_variables.scss";
+
 nav {
   width: 100%;
-  height: 70px;
+  height: 100px;
 
-  padding: 0px 12px;
+  box-sizing: border-box;
+  padding: 0px 48px;
 
   display: flex;
   flex-direction: row;
@@ -11,13 +14,22 @@ nav {
   align-items: center;
 
   position: fixed;
+
+  user-select: none;
 }
 
-.resume-button {
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+}
+
+a {
   display: inline-block;
 
   height: 28px;
   width: 64px;
+  padding: 6px 10px;
 
   display: flex;
   align-items: center;
@@ -25,17 +37,22 @@ nav {
 
   line-height: 50%;
 
-  padding: 6px 10px;
-
-  border-radius: 5px;
-
-  border: 1px solid steelblue;
   color: white;
   text-decoration: none;
 
   transition: all 200ms linear;
 
-  &:hover {
-    background: rgba(steelblue, 0.2);
+  &.resume-button {
+    border-radius: 5px;
+
+    border: 1px solid $primary;
+
+    &:hover {
+      background: rgba($primary, 0.2);
+    }
+  }
+
+  &:not(.resume-button):hover {
+    color: $primary;
   }
 }

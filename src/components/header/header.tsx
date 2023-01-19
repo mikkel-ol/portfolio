@@ -1,14 +1,17 @@
-import { component$, useStyles$ } from "@builder.io/qwik";
+import { component$, useStylesScoped$ } from "@builder.io/qwik";
 
 import styles from "./header.scss?inline";
 
 export default component$(() => {
-  useStyles$(styles);
+  useStylesScoped$(styles);
 
   return (
     <nav>
       <div>Logo</div>
       <div class="links">
+        <a href="#about">About</a>
+        <a href="#Experience">Experience</a>
+        <a href="#contact">Contact</a>
         <a href="/resume" class="resume-button">
           Resume
         </a>

@@ -1,16 +1,25 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useStylesScoped$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import UnderConstruction from "components/under-construction";
+
+import styles from "./index.scss?inline";
 
 export default component$(() => {
-  return <div>Hej</div>;
+  useStylesScoped$(styles);
+
+  return (
+    <div class="container">
+      <UnderConstruction></UnderConstruction>
+    </div>
+  );
 });
 
 export const head: DocumentHead = {
-  title: "Welcome to Qwik",
+  title: "Portfolio — Mikkel O. Laursen",
   meta: [
     {
       name: "description",
-      content: "Qwik site description",
+      content: "Portfolio for Mikkel O. Laursen",
     },
   ],
 };
