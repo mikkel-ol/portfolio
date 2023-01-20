@@ -1,5 +1,6 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import Header from "components/header";
 import UnderConstruction from "components/under-construction";
 
 import styles from "./index.scss?inline";
@@ -8,9 +9,12 @@ export default component$(() => {
   useStylesScoped$(styles);
 
   return (
-    <div class="container">
-      <UnderConstruction></UnderConstruction>
-    </div>
+    <>
+      <Header />
+      <div class="container">
+        <UnderConstruction></UnderConstruction>
+      </div>
+    </>
   );
 });
 
