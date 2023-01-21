@@ -1,4 +1,5 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
+import { $translate as t } from "qwik-speak";
 
 import styles from "./resume.scss?inline";
 
@@ -29,7 +30,7 @@ export default component$(() => {
             <h1 id="name">MIKKEL O. LAURSEN</h1>
             <h1 id="title">
               <a target="_blank" rel="noopener noreferrer" href="http://bachelor.au.dk/ikt/">
-                IKT-STUDERENDE
+                {t("resume.title").toUpperCase()}
               </a>
             </h1>
 

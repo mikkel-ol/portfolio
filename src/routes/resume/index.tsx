@@ -1,9 +1,14 @@
 import { component$ } from "@builder.io/qwik";
 import Resume from "components/resume";
+import { Speak } from "qwik-speak";
 import { head as Head } from "..";
 
 export default component$(() => {
-  return <Resume />;
+  return (
+    <Speak assets={["resume"]}>
+      <Resume />
+    </Speak>
+  );
 });
 
 // why?
