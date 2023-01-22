@@ -1,4 +1,5 @@
 import { component$, useStyles$, useStylesScoped$ } from "@builder.io/qwik";
+import Latex from "components/latex";
 import { $translate as t } from "qwik-speak";
 import { useFavicon } from "src/hooks/useFavicon";
 
@@ -101,21 +102,7 @@ export default component$(() => {
               <div class="entry">
                 <h1>DOKUMENTATION</h1>
                 <p>
-                  <span
-                    class="texhtml"
-                    style="font-family: 'CMU Serif', cmr10, LMRoman10-Regular, 'Times New Roman', 'Nimbus Roman No9 L', Times, serif; letter-spacing: -0.5px;"
-                  >
-                    L
-                    <span style="text-transform: uppercase; font-size: 70%; margin-left: -0.36em; vertical-align: 0.3em; line-height: 0; margin-right: -0.15em;">
-                      a
-                    </span>
-                    T
-                    <span style="text-transform: uppercase; margin-left: -0.1667em; vertical-align: -0.5ex; line-height: 0; margin-right: -0.125em;">
-                      e
-                    </span>
-                    X
-                  </span>
-                  , UML, SysML, Doxygen
+                  <Latex />, UML, SysML, Doxygen
                 </p>
               </div>
 
