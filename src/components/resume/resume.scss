@@ -57,9 +57,9 @@ h1 {
   padding: 70px;
   font-size: 48px;
 
-  .error {
-    margin: 70px;
-    font-size: 48px;
+  &.error {
+    margin: 0;
+    text-align: center;
   }
 }
 
