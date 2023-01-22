@@ -1,0 +1,16 @@
+@import "src/_variables.scss";
+
+.container {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+
+  width: 64px;
+  height: 64px;
+
+  color: white;
+
+  border-radius: 50%;
+
+  background-color: $background;
+}
