@@ -211,16 +211,6 @@ h1 {
   }
 }
 
-#timeline::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 35px;
-  bottom: 35px;
-  left: 5px;
-  border-left: 1px solid lightgray;
-}
-
 #experience {
   grid-column-end: 15;
   grid-row: 13 / 26;

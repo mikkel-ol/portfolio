@@ -1,11 +1,16 @@
-import { component$, useStylesScoped$ } from "@builder.io/qwik";
+import { component$, useStyles$, useStylesScoped$ } from "@builder.io/qwik";
 import { $translate as t } from "qwik-speak";
+import { useFavicon } from "src/hooks/useFavicon";
 
+import stylesPseudo from "./resume-pseudo.scss?inline";
 import styles from "./resume.scss?inline";
 
 export default component$(() => {
+  useStyles$(stylesPseudo);
   useStylesScoped$(styles);
+  useFavicon("/favicon/resume.ico");
 
+  // custom attribute hack
   const page = { size: "A4" };
 
   return (
