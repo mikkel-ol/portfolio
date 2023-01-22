@@ -32,7 +32,7 @@ export default component$(() => {
                 portfolio.ikkel.dk/resume
               </a>
             </div>
-            <img src="/img/profile.jpg" alt="Profilbillede" id="profilepic" />
+            <img src="/img/profile.jpg" alt="Profile picture" id="profilepic" />
             <h1 id="name">MIKKEL O. LAURSEN</h1>
             <h1 id="title">{t("resume.title").toUpperCase()}</h1>
 
@@ -48,8 +48,8 @@ export default component$(() => {
             </div>
 
             <div id="about">
-              <p>Sans for godt design – funktionelt som visuelt.</p>
-              <p>Motiveret af effektive og smarte løsninger.</p>
+              <p>Passion for arkitektur, design og clean code</p>
+              <p>Engageret samarbejdspartner</p>
               <p>Drevet af nysgerrighed og forståelse.</p>
               <p>Interesseret i ny teknologi og state-of-the-art.</p>
               <p>Bidrager med ansvarlighed og snilde.</p>
@@ -58,6 +58,7 @@ export default component$(() => {
             <div id="experience">
               <h1>ERFARING</h1>
               <div id="timeline">
+                <div class="dot"></div>
                 <div class="dot"></div>
                 <div class="dot"></div>
                 <div class="dot"></div>
@@ -71,6 +72,7 @@ export default component$(() => {
                     Sekundært håndtering af reklamationssager.
                   </p>
                 </div>
+
                 <div class="entry">
                   <h1>2013 –</h1>
                   <p class="jobtitle">Konsulent, selvstændig</p>
@@ -79,10 +81,23 @@ export default component$(() => {
                     virksomheder og private.
                   </p>
                 </div>
+
                 <div class="entry">
-                  <h1>2008 – 2013</h1>
-                  <p class="jobtitle"></p>
-                  <div>Diverse ungdomsarbejde – herunder opvasker, flaskedreng og avisbud</div>
+                  <h1>2015 –</h1>
+                  <p class="jobtitle">Supporter, Elgiganten Tilst</p>
+                  <p>
+                    Teknisk hjælp til kunder. Klargøring og opsætning af computere, smartphones, tablets og TV.
+                    Sekundært håndtering af reklamationssager.
+                  </p>
+                </div>
+
+                <div class="entry">
+                  <h1>2015 –</h1>
+                  <p class="jobtitle">Supporter, Elgiganten Tilst</p>
+                  <p>
+                    Teknisk hjælp til kunder. Klargøring og opsætning af computere, smartphones, tablets og TV.
+                    Sekundært håndtering af reklamationssager.
+                  </p>
                 </div>
               </div>
             </div>
@@ -114,51 +129,12 @@ export default component$(() => {
               </div>
             </div>
 
-            <div id="projects">
-              <h1>PROJEKTER</h1>
-              <p>
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/mikkel-ol/beepbot">
-                  {/* <img
-            src="https://raw.githubusercontent.com/mikkel-ol/beepbot/master/etc/logo.png"/> */}
-                  <b>Beep Bot</b>
-                </a>{" "}
-                og{" "}
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/mikkel-ol/bottenanna">
-                  {/* <img src="https://github.com/mikkel-ol/bottenanna/raw/master/logo.png"> */}
-                  <b>Botten Anna</b>
-                </a>
-                – to bots til chat-platformen Discord, der blandt andet kan spille musik fra YouTube, fungere som
-                soundboard og styres fra et selvdesignet website.
-              </p>
-              <p>
-                <b>Home Automation</b> via
-                {/* <img src="https://www.home-assistant.io/images/favicon.ico" alt>  */}
-                Home Assistant med blandt andet automatiske gardiner, smart belysning og stemmestyret kaffemaskine.
-              </p>
-              <p>
-                <b>Selvbygget 3D printer</b> med mange modificeringer – heriblandt
-                {/* <img src="https://octoprint.org/assets/img/tentacle-32x32.png" alt>  */}
-                OctoPrint som webinterface.
-              </p>
-              <p>
-                <a
-                  target="_new"
-                  rel="noopener noreferrer"
-                  href="https://marketplace.visualstudio.com/items?itemName=mikkel-ol.er-syntax-highlighting"
-                >
-                  {/* <img src="https://code.visualstudio.com/favicon.ico" alt> */}
-                  <b>Visual Studio Code extension</b>
-                </a>{" "}
-                med syntax highlighting til Entity-Relationship diagrammer (.er filer).
-              </p>
-              <p id="footer">
-                Se mange af projekterne og flere andre på
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/mikkel-ol/">
-                  <img src="/img/social/039-github.png" />
-                  <b>github.com/mikkel-ol</b>
-                </a>
-              </p>
-            </div>
+            <p id="footer">
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/mikkel-ol/">
+                <img src="/img/social/039-github.png" />
+                <b>mikkel-ol</b>
+              </a>
+            </p>
           </div>
         </div>
       </div>
