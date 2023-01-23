@@ -6,6 +6,8 @@ import { config, translationFn } from "./speak-config";
 
 import globalStyles from "./global.scss?inline";
 
+import "src/extensions/string.extensions";
+
 export default component$(() => {
   /**
    * The root of a QwikCity site always start with the <QwikCityProvider> component,

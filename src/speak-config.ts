@@ -42,5 +42,5 @@ export const loadTranslation$: LoadTranslationFn = $(async (lang: string, asset:
  * Translation functions
  */
 export const translationFn: TranslationFn = {
-  loadTranslation$: loadTranslation$,
+  loadTranslation$,
 };

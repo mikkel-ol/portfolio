@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
+import type { DocumentHead } from "@builder.io/qwik-city";
 import Resume from "components/resume";
 import { Speak } from "qwik-speak";
-import { head as Head } from "..";
 
 export default component$(() => {
   return (
@@ -11,5 +11,12 @@ export default component$(() => {
   );
 });
 
-// why?
-export const head = Head;
+export const head: DocumentHead = {
+  title: "Resume — Mikkel O. Laursen",
+  meta: [
+    {
+      name: "description",
+      content: "Resume for Mikkel O. Laursen",
+    },
+  ],
+};
