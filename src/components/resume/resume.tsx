@@ -57,7 +57,7 @@ export default component$(() => {
             </div>
 
             <div id="experience">
-              <h1>PROJECTS</h1>
+              <h1>{t("resume.projects.title").toUpperCase()}</h1>
               <div id="timeline">
                 <div class="dot"></div>
                 <div class="dot"></div>
