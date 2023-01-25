@@ -476,8 +476,9 @@ h1 {
 
 /* Remove shadows and margin on print */
 @media print {
-  .dot {
-    print-color-adjust: exact; // Get colors of timeline correct
+  * {
+    print-color-adjust: exact; // Get colors correct
+    filter: blur(0);
   }
 
   .errorMsg {
@@ -486,7 +487,6 @@ h1 {
 
   #website {
     display: inline !important;
-    print-color-adjust: exact; // Get colors of correct
   }
 
   #cv {
