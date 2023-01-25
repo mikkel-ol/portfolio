@@ -251,11 +251,22 @@ h1 {
         display: inline;
       }
 
-      .jobtitle {
-        font-size: 18px;
-        font-weight: 800;
-        padding-top: 2px;
-        margin-bottom: 5px;
+      .title {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        .jobtitle {
+          font-size: 18px;
+          font-weight: 800;
+          padding-top: 2px;
+          margin-bottom: 5px;
+        }
+
+        .employment {
+          font-style: italic;
+          opacity: 50%;
+        }
       }
     }
 

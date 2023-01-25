@@ -67,7 +67,10 @@ export default component$(() => {
               <div id="expcontent">
                 <div class="entry">
                   <h1>{formatDate("11/01/2022", { month: "long" }).capitalize()} 2022 –</h1>
-                  <p class="jobtitle">CropManager, SEGES</p>
+                  <div class="title">
+                    <p class="jobtitle">CropManager, SEGES</p>
+                    <p class="employment">frontend</p>
+                  </div>
                   <p>{t("resume.projects.cropmanager")}</p>
                 </div>
 
@@ -76,7 +79,10 @@ export default component$(() => {
                     {formatDate("05/01/2022", { month: "long" }).capitalize()} 2022 –{" "}
                     {formatDate("10/01/2022", { month: "long" }).capitalize()} 2022
                   </h1>
-                  <p class="jobtitle">StoreForecast, BESTSELLER</p>
+                  <div class="title">
+                    <p class="jobtitle">StoreForecast, BESTSELLER</p>
+                    <p class="employment">frontend</p>
+                  </div>
                   <p>{t("resume.projects.perci")}</p>
                 </div>
 
@@ -85,7 +91,10 @@ export default component$(() => {
                     {formatDate("02/01/2022", { month: "long" }).capitalize()} 2022 –{" "}
                     {formatDate("04/01/2022", { month: "long" }).capitalize()} 2022
                   </h1>
-                  <p class="jobtitle">LabTerm2, CGI</p>
+                  <div class="title">
+                    <p class="jobtitle">LabTerm2, CGI</p>
+                    <p class="employment">frontend</p>
+                  </div>
                   <p>{t("resume.projects.npu")}</p>
                 </div>
 
@@ -94,7 +103,10 @@ export default component$(() => {
                     {formatDate("08/01/2021", { month: "long" }).capitalize()} 2021 –{" "}
                     {formatDate("01/01/2022", { month: "long" }).capitalize()} 2022
                   </h1>
-                  <p class="jobtitle">GEPARD, CGI</p>
+                  <div class="title">
+                    <p class="jobtitle">GEPARD, CGI</p>
+                    <p class="employment">full stack</p>
+                  </div>
                   <p>{t("resume.projects.gepard")}</p>
                 </div>
               </div>
