@@ -36,7 +36,6 @@ export default component$(() => {
             <img src="/img/profile.jpg" alt="Profile picture" id="profilepic" />
             <h1 id="name">MIKKEL O. LAURSEN</h1>
             <h1 id="title">{t("resume.title").toUpperCase()}</h1>
-
             <div id="contact">
               <img src="/img/social/email.png" alt="E-mail" />
               <a href="mailto:m@ikkel.dk?Subject=Let's%20do%20something%20together!">m@ikkel.dk</a>
@@ -47,7 +46,6 @@ export default component$(() => {
                 mikkellaursen
               </a>
             </div>
-
             <div id="about">
               <p>Passion for arkitektur, design og clean code</p>
               <p>Engageret samarbejdspartner</p>
@@ -55,7 +53,6 @@ export default component$(() => {
               <p>Interesseret i ny teknologi og state-of-the-art</p>
               <p>Bidrager med ansvarlighed og snilde</p>
             </div>
-
             <div id="experience">
               <h1>{t("resume.projects.title").toUpperCase()}</h1>
               <div id="timeline">
@@ -109,6 +106,10 @@ export default component$(() => {
                   </div>
                   <p>{t("resume.projects.gepard")}</p>
                 </div>
+
+                <div class="entry timeline-footer">
+                  <p>... og mange flere</p>
+                </div>
               </div>
             </div>
 
@@ -117,25 +118,36 @@ export default component$(() => {
               <div class="content">
                 <div class="entry">
                   <h1>SPROG</h1>
-                  <p>C, C++, C#, XAML, Java, Python, HTML, CSS, JS, SQL, VHDL, Assembly</p>
+                  <p>TS/JS, HTML, CSS/Sass, C#, SQL, Java, Python, C, C++</p>
+                </div>
+
+                <div class="entry">
+                  <h1>TEKNOLOGIER</h1>
+                  <p>Angular, React, RxJS, ASP.NET, Docker, Vue, GraphQL, REST, Node.js, Qwik, Unix, Kubernetes</p>
                 </div>
 
                 <div class="entry">
                   <h1>VÆRKTØJER</h1>
-                  <p>Scrum, Git, V-model, GNU Make, PlantUML</p>
-                </div>
-
-                <div class="entry">
-                  <h1>DOKUMENTATION</h1>
                   <p>
-                    <Latex />, UML, SysML, Doxygen
+                    Git, Scrum, Neovim, zsh, UML, C4, <Latex />
                   </p>
                 </div>
+              </div>
+            </div>
 
-                <div class="entry">
-                  <h1>ANDET</h1>
-                  <p>RESTful API, Node.js, Unix, .NET Core, CI, Kaffebryg ☕️</p>
-                </div>
+            <div id="education">
+              <h1>UDDANNELSE</h1>
+              <div class="content">
+                <p>Aarhus School of Engineering</p>
+                <p>Softwareteknologi</p>
+              </div>
+            </div>
+
+            <div id="interests">
+              <h1>INTERESSER</h1>
+              <div class="content">
+                <p>Når der skal slappes af</p>
+                <p>Formel 1, klaver og gaming</p>
               </div>
             </div>
 

@@ -1,6 +1,16 @@
 // production minifier is broken as of qwik 0.16.2 so pseudo selectors gets minified to single colon therefore breaking it with styled scoping
 // workaround is to not style scoped
 
+#timeline::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 35px;
+  bottom: -20px;
+  left: 5px;
+  border-left: 1px dashed lightgray;
+}
+
 #timeline::after {
   content: "";
   position: absolute;
