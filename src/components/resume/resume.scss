@@ -476,6 +476,9 @@ h1 {
 
 /* Remove shadows and margin on print */
 @media print {
+  // box shadow print bug
+  // https://stackoverflow.com/questions/13975198/text-shadow-and-box-shadow-while-printing-chrome
+  // https://bugs.chromium.org/p/chromium/issues/detail?id=174583
   * {
     print-color-adjust: exact; // Get colors correct
     filter: blur(0);
