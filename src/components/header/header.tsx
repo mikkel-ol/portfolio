@@ -7,7 +7,7 @@ export default component$(() => {
 
   return (
     <nav>
-      <div>Logo</div>
+      <div></div>
       <div class="links">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
