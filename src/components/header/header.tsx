@@ -12,7 +12,7 @@ export default component$(() => {
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
-        <a href="/resume" class="resume-button">
+        <a href="/resume.pdf" class="resume-button">
           Resume
         </a>
       </div>
